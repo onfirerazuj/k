@@ -1,20 +1,41 @@
-#### First time ####
-pkg install python-pip
-pip install requests SignerPy phonenumbers rich
-python3 -m pip install flask
+#### First Time Setup ####
+
+pkg update -y && pkg upgrade -y
+
+pkg install -y git python python-pip nano
+
+pip install requests SignerPy phonenumbers rich flask
+
 termux-setup-storage
-cd /storage/emulated/0/t/
-cd $HOME
-rm -rf t
+
+cd /storage/emulated/0/
+
+# تحميل المشروع
 git clone https://github.com/DevKhaledHossam/t.git
-#########
+
+# الدخول للمجلد
 cd t
-cp t ~/
-cd ~
+
+# نسخ الملف التنفيذي للهوم
+cp t $HOME/
+
+# الرجوع للهوم
+cd $HOME
+
+# إعطاء صلاحية تشغيل
 chmod +x t
+
+# إنشاء ملف الأرقام
 nano n.txt
-#Paste the numbers, placing a + sign before each number.
-# CTRL + x
-#y
-#ENTER
+
+# الصق الأرقام بهذا الشكل:
+# +201234567890
+# +201111111111
+
+# للحفظ:
+# CTRL + X
+# ثم Y
+# ثم ENTER
+
+# تشغيل الأداة
 ./t
