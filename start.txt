@@ -1,0 +1,10 @@
+pkg install python-pip
+pip install requests SignerPy phonenumbers rich
+python3 -m pip install flask
+termux-setup-storage
+cd /storage/emulated/0/t/
+cp t ~/
+cd ~
+chmod +x t
+nano n.txt
+./t
