@@ -11,6 +11,8 @@ termux-setup-storage
 cd /storage/emulated/0/
 
 # تحميل المشروع
+pkg install git
+
 git clone https://github.com/DevKhaledHossam/t.git
 
 # الدخول للمجلد
