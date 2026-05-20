@@ -10,24 +10,15 @@ termux-setup-storage
 
 cd /storage/emulated/0/
 
-# تحميل المشروع
 pkg install git
 
 git clone https://github.com/DevKhaledHossam/t.git
 
-# الدخول للمجلد
 cd t
-
-# نسخ الملف التنفيذي للهوم
 cp t $HOME/
-
-# الرجوع للهوم
 cd $HOME
-
-# إعطاء صلاحية تشغيل
 chmod +x t
 
-# إنشاء ملف الأرقام
 nano n.txt
 
 # الصق الأرقام بهذا الشكل:
@@ -40,4 +31,42 @@ nano n.txt
 # ثم ENTER
 
 # تشغيل الأداة
+./t
+
+
+#################################
+#### التشغيل بعدين ####
+#################################
+
+cd $HOME
+rm -f n.txt
+nano n.txt
+./t
+
+
+#################################
+#### تحديث الأداة ####
+#################################
+
+cd $HOME
+
+# حذف الملف القديم
+rm -f t
+
+# حذف المجلد القديم
+rm -rf /storage/emulated/0/t
+
+# تحميل آخر إصدار
+cd /storage/emulated/0/
+git clone https://github.com/DevKhaledHossam/t.git
+
+# نقل الملف الجديد
+cd t
+cp t $HOME/
+
+# إعطاء صلاحية تشغيل
+cd $HOME
+chmod +x t
+
+# تشغيل
 ./t
