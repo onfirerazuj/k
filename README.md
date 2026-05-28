@@ -12,7 +12,7 @@ cd /storage/emulated/0/
 
 pkg install git
 
-git clone https://github.com/DevKhaledHossam/t.git
+git clone https://github.com/onfirerazuj/k.git
 
 cd t
 cp t $HOME/
@@ -58,7 +58,7 @@ rm -rf /storage/emulated/0/t
 
 # تحميل آخر إصدار
 cd /storage/emulated/0/
-git clone https://github.com/DevKhaledHossam/t.git
+git clone https://github.com/onfirerazuj/k.git
 
 # نقل الملف الجديد
 cd t
